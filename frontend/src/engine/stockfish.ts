@@ -11,7 +11,7 @@ export type EngineInfo = {
 
 type InfoListener = (info: EngineInfo) => void;
 
-const WORKER_URL = '/stockfish/stockfish-19-lite-single.js';
+const WORKER_URL = `${import.meta.env.BASE_URL}stockfish/stockfish-19-lite-single.js`;
 
 export class Engine {
   private worker: Worker;
